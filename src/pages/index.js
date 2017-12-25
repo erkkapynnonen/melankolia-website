@@ -5,10 +5,6 @@ import fontawesome from '@fortawesome/fontawesome'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import brands from '@fortawesome/fontawesome-free-brands'
 import Carousel from 'nuka-carousel'
-import sliderImage1 from './assets/slide1.jpg'
-import sliderImage2 from './assets/slide2.jpg'
-import sliderImage3 from './assets/slide3.jpg'
-import sliderImage4 from './assets/slide4.jpg'
 import Link from 'gatsby-link'
 
 const decoratorStyles = {
