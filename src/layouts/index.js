@@ -2,9 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
+/*
+TODO: Re-instate react-fontawesome when bugs are fixed
+https://github.com/FortAwesome/react-fontawesome/issues/44
+
 import fontawesome from '@fortawesome/fontawesome'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import brands from '@fortawesome/fontawesome-free-brands'
+*/
 import { Container, Row, Col, Jumbotron } from 'reactstrap';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
@@ -84,11 +89,11 @@ const Footer = () => (
 
 const SocialIconLinks = () => (
   <div>
-    <Link to=""><FontAwesomeIcon icon={["fab", "facebook"]} /></Link>
-    <Link to=""><FontAwesomeIcon icon={["fab", "instagram"]} /></Link>
-    <Link to=""><FontAwesomeIcon icon={["fab", "spotify"]} /></Link>
-    <Link to=""><FontAwesomeIcon icon={["fab", "youtube"]} /></Link>
-    <Link to=""><FontAwesomeIcon icon={["fab", "soundcloud"]} /></Link>
+    <Link to=""><i className="fab fa-facebook"></i></Link>
+    <Link to=""><i className="fab fa-instagram"></i></Link>
+    <Link to=""><i className="fab fa-spotify"></i></Link>
+    <Link to=""><i className="fab fa-youtube"></i></Link>
+    <Link to=""><i className="fab fa-soundcloud"></i></Link>
   </div>
 )
 
@@ -100,6 +105,12 @@ const TemplateWrapper = ({ children, data }) => {
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
+      ]}
+      script={[
+        { // TODO: Remove this when react-fontawesome is fixed (see top of file)
+          src: 'https://use.fontawesome.com/releases/v5.0.2/js/all.js',
+          defer: true
+        }
       ]}
     />
     <Header />

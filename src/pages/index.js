@@ -1,9 +1,6 @@
 import React from 'react'
 import createReactClass from 'create-react-class';
 import { Container, Row, Col } from 'reactstrap';
-import fontawesome from '@fortawesome/fontawesome'
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import brands from '@fortawesome/fontawesome-free-brands'
 import Carousel from 'nuka-carousel'
 import Link from 'gatsby-link'
 
